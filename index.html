@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/archpic.css">
+    <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
@@ -25,7 +26,30 @@
         </div>
     </div>
     <div class="midsection">
-        mid
+        <div class="animation">
+            <p>Sign In</p>
+        </div>
+        <form class="form">
+            <div class="form-row">
+                <label class="label" for="username">Username</label>
+                <input class="input" id="username" type="text" placeholder="Username">
+            </div>
+            <div class="form-row">
+                <label class="label" for="email">E-mail</label>
+                <input class="input" id="email" type="email" placeholder="Email">
+            </div>
+            <div class="form-row">
+                <label class="label" for="pass">Password</label>
+                <input class="input" id="pass" type="password" placeholder="password">
+            </div>
+            <div class="form-row">
+                <label class="label" for="repass">Repeat password</label>
+                <input class="input" id="repass" type="password" placeholder="password">
+            </div>
+            <div class="form-row">
+                <a class="link" href="#">Sign in</a>
+            </div>
+        </form>
     </div>
 </body>
 </html>

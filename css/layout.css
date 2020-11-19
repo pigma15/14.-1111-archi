@@ -4,6 +4,8 @@ body {
     backdrop-filter: saturate(0);
     width: 100vw;
     height: 100vh;
+    background-repeat: no-repeat;
+    background-color: grey;
 }
 .header {
     display: inline-block;
@@ -27,14 +29,90 @@ body {
 }
 .hero > img {
     text-align: center;
-    width: 25%;
+    width: 100px;
     padding: 20px;
     filter: blur(1px);
 }
+.header > div:nth-child(3) {
+    float: right;
+}
 .midsection {
     display: inline-block;
-    background-color: blanchedalmond;
+    background-color: #ffffff50;
     width: 60%;
     height: 300px;
     margin: 50px calc((100% - 60%) / 2);
+}
+.midsection > div {
+    width: 50%;
+    height: 100%;
+}
+.midsection .animation {
+    display: inline-block;
+    background-image: url(../pic/flwright.jpeg);
+    background-size: cover;
+    margin: 20px;
+    height: calc(100% - (20px * 2));
+    width: calc(50% - (20px * 2));
+    animation-name: mainAnime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    filter: saturate(0);
+}
+.midsection .animation:hover {
+    filter: saturate(1);
+}
+@keyframes mainAnime {
+    0% {background-image: url(../pic/flwright.jpeg);}
+    33% {background-image: url(../pic/rbofill.jpg);}
+    66% {background-image: url(../pic/zhadid.jpg);}
+    100% {background-image: url(../pic/flwright.jpeg);}
+}
+.animation p {
+    display: inline-block;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 10%;
+}
+@media (max-width: 800px) {
+    .midsection {
+        width: 80%;
+        margin: 50px calc((100% - 80%) / 2);
+    }
+}
+@media (max-width: 550px) {
+    .midsection {
+        height: 600px;
+    }
+    .midsection > .animation {
+        width: 90%;
+        margin: 20px 5%;
+        height: calc(50% - 40px);
+    }
+    .header {
+        width: 100%;
+        height: 700px;
+    }
+    .header > div {
+        width: 50%;
+        margin: 5px 25%;
+    }
+    .header .hero {
+       position: absolute;
+       top: 10px;
+    }
+    .header > div {
+        position: absolute;
+        top: 220px;
+    }
+    .header > div:last-of-type {
+        position: absolute;
+        top: 440px;
+    }
+
 }
