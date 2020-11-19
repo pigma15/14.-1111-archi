@@ -1,0 +1,16 @@
+.pic {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    filter: saturate(0);
+}
+.pic:hover {
+    animation-name: picFilter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes picFilter {
+    from { filter: saturate(0)}
+    to { filter: saturate(1.2)}
+}
