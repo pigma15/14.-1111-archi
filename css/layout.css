@@ -72,6 +72,9 @@ body {
 .architects {
     display: inline-block;
     background-color: white;
+    width: 60%;
+    height: 60px;
+    margin: 40px calc((100% - 60%) / 2);
 }
 .buildings {
     display: inline-block;
