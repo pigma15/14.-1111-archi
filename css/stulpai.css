@@ -1,0 +1,108 @@
+.stulpas {
+    display: inline-block;
+    background-image: linear-gradient(rgb(180, 180, 180), rgb(61, 61, 61));
+    float: left;
+    width: calc(20% - 20px);    /* height 500px */
+    height: calc(100% - 10px);
+    margin: 5px 10px;
+}
+.stulpas:nth-of-type(1) {
+    animation: stulpas1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes stulpas1 {
+    0% {
+        height: calc(100% - 495px);
+        margin-top: 490px;
+    }
+    100% {
+        height: calc(100% - 10px);
+        margin-top: 5px;
+    }
+}
+.stulpas:nth-of-type(2) {
+    animation: stulpas2;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes stulpas2 {
+    0% {
+        height: calc(100% - 495px);
+        margin-top: 490px;
+    }
+    33% {
+        height: calc(100% - 105px);
+        margin-top: 100px;
+    }
+    66% {
+        height: calc(100% - 355px);
+        margin-top: 350px;
+    }
+    100% {
+        height: calc(100% - 10px);
+        margin-top: 5px;
+    }
+}
+.stulpas:nth-of-type(3) {
+    animation: stulpas3;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes stulpas3 {
+    0% {
+        height: calc(100% - 495px);
+        margin-top: 490px;
+    }
+    50% {
+        height: calc(100% - 10px);
+        margin-top: 5px;
+    }
+    100% {
+        height: calc(100% - 205px);
+        margin-top: 200px;
+    }
+}
+.stulpas:nth-of-type(4) {
+    animation: stulpas4;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes stulpas4 {
+    0% {
+        height: calc(100% - 495px);
+        margin-top: 490px;
+    }
+    100% {
+        height: calc(100% - 10px);
+        margin-top: 5px;
+    }
+}
+.stulpas:nth-of-type(5) {
+    animation: stulpas5;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes stulpas5 {
+    0% {
+        height: calc(100% - 495px);
+        margin-top: 490px;
+    }
+    33% {
+        height: calc(100% - 205px);
+        margin-top: 200px;
+    }
+    66% {
+        height: calc(100% - 10px);
+        margin-top: 5px;
+    }
+    100% {
+        height: calc(100% - 400px);
+        margin-top: 395px;
+    }
+}

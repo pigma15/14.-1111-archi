@@ -86,7 +86,9 @@ body {
 }
 .buildings {
     display: inline-block;
-    background-color: grey;
+    width: 66%;
+    margin: 0 calc((100% - 66%) / 2);
+    height: 500px;
 }
 @keyframes mainAnime {
     0% {background-image: url(../pic/flwright.jpeg);}
@@ -114,6 +116,7 @@ body {
         height: 160px;
         margin: 40px calc((100% - 85%) / 2);
 }
+
 @media (max-width: 600px) {
     .background {
         height: 1400px;
@@ -146,5 +149,4 @@ body {
         position: absolute;
         top: 440px;
     }
-
 }
