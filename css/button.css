@@ -21,6 +21,7 @@
 
 @media (max-width: 900px) {
     .bottom .architects .button {
-        width: calc((100% - (5px * 12) ) / 3);
+        width: calc((100% - (5px * 6) ) / 3);
+        font-size: 15px;
     }
 }
