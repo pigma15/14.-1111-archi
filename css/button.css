@@ -1,0 +1,26 @@
+.bottom .architects .button {
+    float: left;
+    background-color: lightgray;
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 5px;
+    width: calc((100% - (5px * 12) ) / 6);
+    text-align: center;
+    margin: 5px;
+    border: gray 1px solid;
+    border-radius: 10px;
+}
+
+.bottom .architects .button:hover {
+    background-color: rgb(128, 128, 128);
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .bottom .architects .button {
+        width: calc((100% - (5px * 12) ) / 3);
+    }
+}

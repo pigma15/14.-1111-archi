@@ -12,6 +12,7 @@ body {
     width: 100vw;
     height: 700px;
     backdrop-filter: saturate(0);
+    z-index: -1;
 }
 .header {
     display: inline-block;
@@ -77,10 +78,11 @@ body {
 }
 .architects {
     display: inline-block;
-    background-color: white;
-    width: 60%;
-    height: 60px;
-    margin: 40px calc((100% - 60%) / 2);
+    background-color: black;
+    width: 75%;
+    height: 90px;
+    margin: 40px calc((100% - 75%) / 2);
+    border-top: gray 2px solid ;
 }
 .buildings {
     display: inline-block;
@@ -102,11 +104,15 @@ body {
     text-decoration: underline;
     margin: 10%;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .midsection {
         width: 80%;
         margin: 50px calc((100% - 80%) / 2);
     }
+    .architects {
+        width: 85%;
+        height: 160px;
+        margin: 40px calc((100% - 85%) / 2);
 }
 @media (max-width: 600px) {
     .background {
