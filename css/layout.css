@@ -63,6 +63,20 @@ body {
 .midsection .animation:hover {
     filter: saturate(1);
 }
+.bottom {
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+    height: 800px;
+}
+.architects {
+    display: inline-block;
+    background-color: white;
+}
+.buildings {
+    display: inline-block;
+    background-color: grey;
+}
 @keyframes mainAnime {
     0% {background-image: url(../pic/flwright.jpeg);}
     33% {background-image: url(../pic/rbofill.jpg);}
