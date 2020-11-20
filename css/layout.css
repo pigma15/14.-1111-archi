@@ -1,7 +1,7 @@
 body {
     background-image: url(../pic/rpiano.jpg);
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     background-color: grey;
@@ -109,6 +109,9 @@ body {
     }
 }
 @media (max-width: 600px) {
+    .background {
+        height: 1400px;
+    }
     .midsection {
         height: 600px;
     }
